@@ -21,7 +21,16 @@ console.log(lastDate,start_date,);
         <span>{month + 1}월</span>
       </header>
       <main>
-        달력...
+        <ul className='date'>
+          {
+            Array(lastDate).fill().map((_, i )=>{
+              return(
+              <li key={i}>{i +1}</li>
+              )
+            })
+          }
+
+        </ul>
       </main>
     </div>
   );
