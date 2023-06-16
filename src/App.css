@@ -1,8 +1,44 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+*{
+  box-sizing: border-box;
+}
+ul{
+  list-style-type: none;
+  padding: 0px;
+}
+
+.calendar{
+  background: #000;
+  color: #fff;
+  width: 400px;
+  padding: 1rem;
+  padding-top:  2rem;
+}
+.calendar ul.date{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+
+}
+.calendar ul.date li{
+ border-bottom:  1px solid rgba(225,225,225, 0.2);
+ padding: 0.5em;/*반간*/
 }
 
 
+.calendar header{
+  display: flex;
+}
+.calendar header h2{
+    line-height: 40px;
+    margin: 0;
+    font-size: 40px;
+    margin-right: 1rem;
+}
